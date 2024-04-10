@@ -5,8 +5,10 @@ def get_numbers_ticket(min, max, quantity):
     This function generates a set of unique random numbers for lotteries.
     '''
     # Checking the correctness of input data
-    if not (1 <= min <= max <= 777):
-        return[]
+    if not (1 <= min <= max <= 1000):
+        return[] 
+    if min >= quantity or min >= max or (min + max) <= quantity:
+        return[] 
     
     # Use set to ensure uniqueness of numbers
     numbers = set()
