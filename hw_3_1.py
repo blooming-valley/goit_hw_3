@@ -15,7 +15,8 @@ def get_days_from_today(date):
     difference = date_obj - today
     
     # Return total amount of days
-    return print(f'The total amount of days between the given date and the current date is: {difference.days}') 
+    return difference.days 
 
 # For example:
-get_days_from_today('1988-05-18') 
+calculate = get_days_from_today('1988-05-18') 
+print(calculate)
