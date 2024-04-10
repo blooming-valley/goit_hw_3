@@ -6,7 +6,7 @@ def get_days_from_today(date):
     of days between the given date and the current date
     '''
     # Convert the date string in format 'YYYY-MM-DD' into a datetime object
-    date_obj = datetime.strptime(date, '%Y.%m.%d').date()
+    date_obj = datetime.strptime(date, '%Y-%m-%d').date()
     
     # Get current date
     today = datetime.now().date()
@@ -18,4 +18,4 @@ def get_days_from_today(date):
     return print(f'The total amount of days between the given date and the current date is: {difference.days}') 
 
 # For example:
-get_days_from_today('1988.05.18') 
+get_days_from_today('1988-05-18') 
